@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A96204B81A08E8BF00DC6AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96204B71A08E8BF00DC6AEC /* AppDelegate.swift */; };
+		A96204BB1A08E8BF00DC6AEC /* BrainFX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A96204B91A08E8BF00DC6AEC /* BrainFX.xcdatamodeld */; };
+		A96204BD1A08E8BF00DC6AEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96204BC1A08E8BF00DC6AEC /* ViewController.swift */; };
+		A96204C01A08E8BF00DC6AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96204BE1A08E8BF00DC6AEC /* Main.storyboard */; };
+		A96204C21A08E8BF00DC6AEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96204C11A08E8BF00DC6AEC /* Images.xcassets */; };
+		A96204C51A08E8BF00DC6AEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96204C31A08E8BF00DC6AEC /* LaunchScreen.xib */; };
+		A96204D11A08E8C000DC6AEC /* BrainFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96204D01A08E8C000DC6AEC /* BrainFXTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A96204CB1A08E8C000DC6AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96204AA1A08E8BF00DC6AEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96204B11A08E8BF00DC6AEC;
+			remoteInfo = BrainFX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A96204B21A08E8BF00DC6AEC /* BrainFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96204B61A08E8BF00DC6AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96204B71A08E8BF00DC6AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A96204BA1A08E8BF00DC6AEC /* BrainFX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrainFX.xcdatamodel; sourceTree = "<group>"; };
+		A96204BC1A08E8BF00DC6AEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A96204BF1A08E8BF00DC6AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A96204C11A08E8BF00DC6AEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A96204C41A08E8BF00DC6AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A96204CA1A08E8C000DC6AEC /* BrainFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96204CF1A08E8C000DC6AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96204D01A08E8C000DC6AEC /* BrainFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFXTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A96204AF1A08E8BF00DC6AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96204C71A08E8C000DC6AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A96204A91A08E8BF00DC6AEC = {
+			isa = PBXGroup;
+			children = (
+				A96204B41A08E8BF00DC6AEC /* BrainFX */,
+				A96204CD1A08E8C000DC6AEC /* BrainFXTests */,
+				A96204B31A08E8BF00DC6AEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A96204B31A08E8BF00DC6AEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A96204B21A08E8BF00DC6AEC /* BrainFX.app */,
+				A96204CA1A08E8C000DC6AEC /* BrainFXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A96204B41A08E8BF00DC6AEC /* BrainFX */ = {
+			isa = PBXGroup;
+			children = (
+				A96204B71A08E8BF00DC6AEC /* AppDelegate.swift */,
+				A96204BC1A08E8BF00DC6AEC /* ViewController.swift */,
+				A96204BE1A08E8BF00DC6AEC /* Main.storyboard */,
+				A96204C11A08E8BF00DC6AEC /* Images.xcassets */,
+				A96204C31A08E8BF00DC6AEC /* LaunchScreen.xib */,
+				A96204B91A08E8BF00DC6AEC /* BrainFX.xcdatamodeld */,
+				A96204B51A08E8BF00DC6AEC /* Supporting Files */,
+			);
+			path = BrainFX;
+			sourceTree = "<group>";
+		};
+		A96204B51A08E8BF00DC6AEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A96204B61A08E8BF00DC6AEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A96204CD1A08E8C000DC6AEC /* BrainFXTests */ = {
+			isa = PBXGroup;
+			children = (
+				A96204D01A08E8C000DC6AEC /* BrainFXTests.swift */,
+				A96204CE1A08E8C000DC6AEC /* Supporting Files */,
+			);
+			path = BrainFXTests;
+			sourceTree = "<group>";
+		};
+		A96204CE1A08E8C000DC6AEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A96204CF1A08E8C000DC6AEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A96204B11A08E8BF00DC6AEC /* BrainFX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96204D41A08E8C000DC6AEC /* Build configuration list for PBXNativeTarget "BrainFX" */;
+			buildPhases = (
+				A96204AE1A08E8BF00DC6AEC /* Sources */,
+				A96204AF1A08E8BF00DC6AEC /* Frameworks */,
+				A96204B01A08E8BF00DC6AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrainFX;
+			productName = BrainFX;
+			productReference = A96204B21A08E8BF00DC6AEC /* BrainFX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A96204C91A08E8C000DC6AEC /* BrainFXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96204D71A08E8C000DC6AEC /* Build configuration list for PBXNativeTarget "BrainFXTests" */;
+			buildPhases = (
+				A96204C61A08E8C000DC6AEC /* Sources */,
+				A96204C71A08E8C000DC6AEC /* Frameworks */,
+				A96204C81A08E8C000DC6AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96204CC1A08E8C000DC6AEC /* PBXTargetDependency */,
+			);
+			name = BrainFXTests;
+			productName = BrainFXTests;
+			productReference = A96204CA1A08E8C000DC6AEC /* BrainFXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A96204AA1A08E8BF00DC6AEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Alphaweb;
+				TargetAttributes = {
+					A96204B11A08E8BF00DC6AEC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A96204C91A08E8C000DC6AEC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A96204B11A08E8BF00DC6AEC;
+					};
+				};
+			};
+			buildConfigurationList = A96204AD1A08E8BF00DC6AEC /* Build configuration list for PBXProject "BrainFX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A96204A91A08E8BF00DC6AEC;
+			productRefGroup = A96204B31A08E8BF00DC6AEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A96204B11A08E8BF00DC6AEC /* BrainFX */,
+				A96204C91A08E8C000DC6AEC /* BrainFXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A96204B01A08E8BF00DC6AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96204C01A08E8BF00DC6AEC /* Main.storyboard in Resources */,
+				A96204C51A08E8BF00DC6AEC /* LaunchScreen.xib in Resources */,
+				A96204C21A08E8BF00DC6AEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96204C81A08E8C000DC6AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A96204AE1A08E8BF00DC6AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96204BD1A08E8BF00DC6AEC /* ViewController.swift in Sources */,
+				A96204BB1A08E8BF00DC6AEC /* BrainFX.xcdatamodeld in Sources */,
+				A96204B81A08E8BF00DC6AEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96204C61A08E8C000DC6AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96204D11A08E8C000DC6AEC /* BrainFXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A96204CC1A08E8C000DC6AEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A96204B11A08E8BF00DC6AEC /* BrainFX */;
+			targetProxy = A96204CB1A08E8C000DC6AEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A96204BE1A08E8BF00DC6AEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96204BF1A08E8BF00DC6AEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A96204C31A08E8BF00DC6AEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96204C41A08E8BF00DC6AEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A96204D21A08E8C000DC6AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A96204D31A08E8C000DC6AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A96204D51A08E8C000DC6AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrainFX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A96204D61A08E8C000DC6AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrainFX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A96204D81A08E8C000DC6AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainFXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainFX.app/BrainFX";
+			};
+			name = Debug;
+		};
+		A96204D91A08E8C000DC6AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainFXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainFX.app/BrainFX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A96204AD1A08E8BF00DC6AEC /* Build configuration list for PBXProject "BrainFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96204D21A08E8C000DC6AEC /* Debug */,
+				A96204D31A08E8C000DC6AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96204D41A08E8C000DC6AEC /* Build configuration list for PBXNativeTarget "BrainFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96204D51A08E8C000DC6AEC /* Debug */,
+				A96204D61A08E8C000DC6AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A96204D71A08E8C000DC6AEC /* Build configuration list for PBXNativeTarget "BrainFXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96204D81A08E8C000DC6AEC /* Debug */,
+				A96204D91A08E8C000DC6AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A96204B91A08E8BF00DC6AEC /* BrainFX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A96204BA1A08E8BF00DC6AEC /* BrainFX.xcdatamodel */,
+			);
+			currentVersion = A96204BA1A08E8BF00DC6AEC /* BrainFX.xcdatamodel */;
+			path = BrainFX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A96204AA1A08E8BF00DC6AEC /* Project object */;
+}
