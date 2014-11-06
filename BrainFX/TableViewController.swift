@@ -9,44 +9,42 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource {
-
-    @IBOutlet weak var tableView: UITableView!
+class TableViewController: UIViewController, UITableViewDataSource {
     
     var people = [NSManagedObject]()
+   
+    @IBOutlet weak var tableView: UITableView!
+    
+//    var adj: String!
+//    var nom: String!
+//    var ver: String!
+
+    var adj = zufallsadj[0]
+    var nom = zufallsnom[0]
+    var ver = zufallsver[0]
+    
+   
+    
+    
+    
     
     @IBAction func addSpruch(sender: AnyObject) {
-        var alert = UIAlertController(title: "New name",
-            message: "Add a new name",
-            preferredStyle: .Alert)
         
-        let saveAction = UIAlertAction(title: "Save",
-            style: .Default) { (action: UIAlertAction!) -> Void in
-                
-                let textField = alert.textFields![0] as UITextField
-                self.saveName(textField.text)
-                self.tableView.reloadData()
-        }
+        self.saveName(adj)
+     
+        self.tableView.reloadData()
+        //println("---->\(adj)\( nom)\( ver)")
         
-        let cancelAction = UIAlertAction(title: "Cancel",
-            style: .Default) { (action: UIAlertAction!) -> Void in
-        }
         
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField!) -> Void in
-        }
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        presentViewController(alert,
-            animated: true,
-            completion: nil)
+    
+    
+    
+    
+    
+    
+    
+    
     }
-    
-    
-    
-    
     
     
     
@@ -55,6 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         title = "\"Meine Brainers\""
         tableView.registerClass(UITableViewCell.self,
             forCellReuseIdentifier: "Cell")
+        
     }
     
     // Do any additional setup after loading the view, typically from a nib.
@@ -64,25 +63,49 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     
     
-    // MARK: UITableViewDataSource
-    func tableView(tableView: UITableView,
-        numberOfRowsInSection section: Int) -> Int {
-            return people.count
+    
+    // Hier werden die Zeilen und Zellen deffiniert
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return people.count
+        
     }
     
-    func tableView(tableView: UITableView,
-        cellForRowAtIndexPath
-        indexPath: NSIndexPath) -> UITableViewCell {
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
-            
-            let person = people[indexPath.row]
-            cell.textLabel.text = person.valueForKey("adjektiv") as String?
-            
-            return cell
+        
+        // Hier wird die selbstgemachte Zelle aus TaskCell deffiniert
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell
+        
+        let person = people[indexPath.row]
+        
+        
+//        adj = person.valueForKey("adjektiv") as String!
+//        nom = person.valueForKey("nomen") as String!
+//        ver = person.valueForKey("verb")  as String!
+        
+        
+        
+        
+        cell.spruchLabel.text = person.valueForKey("verb") as String!
+        
+        //cell.spruchLabel.text = ("\(adj) \(nom) \(ver)!")
+        
+        
+        
+        
+        return cell
+    
+        
     }
 
-    func saveName(name: String) {
+    
+    
+    func saveName(String) {
+        
         //1
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         
@@ -90,13 +113,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         //2
         let entity =  NSEntityDescription.entityForName("Person", inManagedObjectContext: managedContext)
+
+        
         
         let person = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         
         
         
         //3
-        person.setValue(name, forKey: "adjektiv")
+        person.setValue(adj, forKey: "adjektiv")
+        person.setValue(nom, forKey: "nomen")
+        person.setValue(ver, forKey: "verb")
+
+       
         
         //4
         var error: NSError?
@@ -105,10 +134,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         }  
         //5
         people.append(person)
+    
+        
+    
     }
     
 
     override func viewWillAppear(animated: Bool) {
+        
         super.viewWillAppear(animated)
         
         //1
@@ -126,9 +159,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         if let results = fetchedResults {
             people = results
+        
         } else {
             println("Could not fetch \(error), \(error!.userInfo)")
         }
+    
+        
+    
     }
 
     
@@ -156,9 +193,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                 managedContext.deleteObject(people[indexPath.row] as NSManagedObject)
                //Das entfernt es aus dem Table
                 people.removeAtIndex(indexPath.row)
-                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
-    }
+   }
 
     
     
