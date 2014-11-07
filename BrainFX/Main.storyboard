@@ -16,100 +16,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Pa-jI-Iw1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-UY-IhY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="46" id="0io-NA-N6F" customClass="TaskCell" customModule="BrainFX" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="91" id="wrh-Ic-ESY" customClass="TaskCell" customModule="BrainFX" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0io-NA-N6F" id="x5A-yZ-fxW">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wrh-Ic-ESY" id="fuO-WD-Vyk">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spruchLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Law-aX-czg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adjLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2f-38-6eW">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="15" y="8" width="382" height="31"/>
+                                                        <rect key="frame" x="32" y="0.0" width="340" height="30"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nomLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkE-hV-al5">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="32" y="29" width="340" height="30"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="verLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i21-1l-FG7">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="33" y="58" width="340" height="30"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="Law-aX-czg"/>
+                                                    <exclude reference="S2f-38-6eW"/>
+                                                    <exclude reference="XkE-hV-al5"/>
+                                                    <exclude reference="i21-1l-FG7"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="Law-aX-czg"/>
+                                                    <include reference="S2f-38-6eW"/>
+                                                    <include reference="XkE-hV-al5"/>
+                                                    <include reference="i21-1l-FG7"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.95238600429999998" blue="0.62221749410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.83093217257025387" green="1" blue="0.88620707307948088" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="spruchLabel" destination="Law-aX-czg" id="nnu-6h-moh"/>
+                                            <outlet property="adjLabel" destination="S2f-38-6eW" id="4CM-qA-gSh"/>
+                                            <outlet property="nomLabel" destination="XkE-hV-al5" id="2vf-60-9FN"/>
+                                            <outlet property="verLabel" destination="i21-1l-FG7" id="b6F-4a-GVM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="-3" y="70" width="406" height="530"/>
                                 </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Gft-5P-8rh"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="BfJ-5r-ifX"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cu-x8-xp7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZ0-r1-3fS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="zurück">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="338" y="20" width="46" height="30"/>
+                                    <rect key="frame" x="21" y="20" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="addSpruch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3SN-Xj-vGE"/>
+                                    <segue destination="bZA-GT-WUH" kind="presentation" id="pSD-as-tlj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuK-T7-fgk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN8-93-AIR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Zurück">
+                                <state key="normal" title="Speichern">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="20" width="48" height="30"/>
+                                    <rect key="frame" x="314" y="20" width="70" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="bZA-GT-WUH" kind="show" id="CPB-Vv-V9h"/>
+                                    <action selector="addSpruch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kgd-oT-FtM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="7Pa-jI-Iw1"/>
-                                <exclude reference="0cu-x8-xp7"/>
-                                <exclude reference="VuK-T7-fgk"/>
+                                <exclude reference="JH4-UY-IhY"/>
+                                <exclude reference="IZ0-r1-3fS"/>
+                                <exclude reference="NN8-93-AIR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="7Pa-jI-Iw1"/>
-                                <include reference="0cu-x8-xp7"/>
-                                <include reference="VuK-T7-fgk"/>
+                                <include reference="JH4-UY-IhY"/>
+                                <include reference="IZ0-r1-3fS"/>
+                                <include reference="NN8-93-AIR"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4pF-6e-hFB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="7Pa-jI-Iw1" id="fFP-wv-M6o"/>
+                        <outlet property="tableView" destination="JH4-UY-IhY" id="Rx0-o1-IoI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="559"/>
+            <point key="canvasLocation" x="1374" y="550"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Ef-AE-eX9">
@@ -121,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dv3-65-uWD" kind="relationship" relationship="rootViewController" id="SR3-hk-7bb"/>
+                        <segue destination="dv3-65-uWD" kind="relationship" relationship="rootViewController" id="ULR-15-bKR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1E4-6d-h0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,52 +164,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jetzt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cje-yg-6Jl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gentleman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cje-yg-6Jl">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.63921568627450975" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="102" width="361" height="21"/>
+                                    <rect key="frame" x="20" y="96" width="361" height="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gehts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVJ-aF-P4M">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVJ-aF-P4M">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="158" width="361" height="21"/>
+                                    <rect key="frame" x="20" y="134" width="361" height="28"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="los!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-oc-BFT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="engines!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-oc-BFT">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.63921568630000003" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="225" width="361" height="21"/>
+                                    <rect key="frame" x="20" y="170" width="361" height="30"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fotolia_66152763_M.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ttX-MX-GKU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="218" width="244" height="231"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWN-kN-ukg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="BrainFX">
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.69411764705882351" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" BrainFX ">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="366" width="54" height="30"/>
+                                    <rect key="frame" x="161" y="525" width="78" height="38"/>
                                 </variation>
                                 <connections>
                                     <action selector="BrainFXButtonTapped:" destination="dv3-65-uWD" eventType="touchUpInside" id="5Hg-WG-JiW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="cje-yg-6Jl"/>
                                 <exclude reference="ZVJ-aF-P4M"/>
                                 <exclude reference="b7a-oc-BFT"/>
+                                <exclude reference="ttX-MX-GKU"/>
                                 <exclude reference="xWN-kN-ukg"/>
                             </mask>
                         </variation>
@@ -194,12 +228,14 @@
                                 <include reference="cje-yg-6Jl"/>
                                 <include reference="ZVJ-aF-P4M"/>
                                 <include reference="b7a-oc-BFT"/>
+                                <include reference="ttX-MX-GKU"/>
                                 <include reference="xWN-kN-ukg"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="uTd-Zg-0he">
                         <barButtonItem key="rightBarButtonItem" title="Speichern" id="Tgq-xz-XId">
+                            <color key="tintColor" red="0.26274509800000001" green="0.63921568630000003" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="vXZ-lx-hvc" kind="presentation" identifier="segueTest" id="jQD-WC-TXc"/>
                             </connections>
@@ -216,4 +252,7 @@
             <point key="canvasLocation" x="594" y="558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fotolia_66152763_M.jpg" width="1378" height="1378"/>
+    </resources>
 </document>

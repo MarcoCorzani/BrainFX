@@ -11,10 +11,13 @@ import UIKit
 class TaskCell: UITableViewCell {
 
     
+    @IBOutlet weak var adjLabel: UILabel!
    
-    @IBOutlet weak var spruchLabel: UILabel!
+    
+    @IBOutlet weak var nomLabel: UILabel!
     
     
+    @IBOutlet weak var verLabel: UILabel!
    
     
    

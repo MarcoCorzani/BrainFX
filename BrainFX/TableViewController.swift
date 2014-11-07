@@ -13,6 +13,9 @@ class TableViewController: UIViewController, UITableViewDataSource {
     
     var people = [NSManagedObject]()
    
+   
+   
+  
     @IBOutlet weak var tableView: UITableView!
     
 //    var adj: String!
@@ -26,25 +29,18 @@ class TableViewController: UIViewController, UITableViewDataSource {
    
     
     
-    
-    
     @IBAction func addSpruch(sender: AnyObject) {
+    
+
+    
+    
         
         self.saveName(adj)
      
         self.tableView.reloadData()
         //println("---->\(adj)\( nom)\( ver)")
         
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    }
+}
     
     
     
@@ -82,27 +78,16 @@ class TableViewController: UIViewController, UITableViewDataSource {
         
         let person = people[indexPath.row]
         
+        cell.adjLabel.text = person.valueForKey("adjektiv") as String!
+        cell.nomLabel.text = person.valueForKey("nomen") as String!
+        cell.verLabel.text = person.valueForKey("verb") as String!
+       
         
-//        adj = person.valueForKey("adjektiv") as String!
-//        nom = person.valueForKey("nomen") as String!
-//        ver = person.valueForKey("verb")  as String!
-        
-        
-        
-        
-        cell.spruchLabel.text = person.valueForKey("verb") as String!
-        
-        //cell.spruchLabel.text = ("\(adj) \(nom) \(ver)!")
-        
-        
-        
+        people.count
         
         return cell
-    
-        
     }
 
-    
     
     func saveName(String) {
         
@@ -113,33 +98,33 @@ class TableViewController: UIViewController, UITableViewDataSource {
         
         //2
         let entity =  NSEntityDescription.entityForName("Person", inManagedObjectContext: managedContext)
-
-        
         
         let person = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        
-        
         
         //3
         person.setValue(adj, forKey: "adjektiv")
         person.setValue(nom, forKey: "nomen")
         person.setValue(ver, forKey: "verb")
-
-       
+        
         
         //4
         var error: NSError?
         
-            if !managedContext.save(&error) {println("Could not save \(error) , \(error?.userInfo)")
-        }  
+        if !managedContext.save(&error) {println("Could not save \(error) , \(error?.userInfo)")
+        }
         //5
-        people.append(person)
-    
         
-    
+        people.insert(person, atIndex: 0) //Anstatt append.person --> am Ende dazufügen  --> Jetzt am Anfang
+        
+        
     }
-    
 
+    
+    
+    
+    
+    
+    
     override func viewWillAppear(animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -158,16 +143,19 @@ class TableViewController: UIViewController, UITableViewDataSource {
         let fetchedResults = managedContext.executeFetchRequest(fetchRequest, error: &error) as [NSManagedObject]?
         
         if let results = fetchedResults {
-            people = results
+            
+            people = results.reverse() //.reverse() Umgekehrte Anzeige
+            
         
         } else {
             println("Could not fetch \(error), \(error!.userInfo)")
         }
     
-        
-    
     }
 
+
+
+    
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
             return true
