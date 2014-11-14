@@ -15,8 +15,9 @@ class TableViewController: UIViewController, UITableViewDataSource {
    
    
    
-  
     @IBOutlet weak var tableView: UITableView!
+  
+    
     
 //    var adj: String!
 //    var nom: String!
@@ -29,7 +30,13 @@ class TableViewController: UIViewController, UITableViewDataSource {
    
     
     
-    @IBAction func addSpruch(sender: AnyObject) {
+    
+    @IBAction func addSpruch(sender: UIBarButtonItem) {
+    
+        // Hier wird der Speichern-Button deaktiviert
+        self.navigationItem.rightBarButtonItem?.enabled = false
+    
+   
     
 
     
@@ -46,7 +53,7 @@ class TableViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\"Meine Brainers\""
+        //title = "\"Meine Brainers\""
         tableView.registerClass(UITableViewCell.self,
             forCellReuseIdentifier: "Cell")
         

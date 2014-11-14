@@ -11,6 +11,7 @@ import UIKit
 class TaskCell: UITableViewCell {
 
     
+    
     @IBOutlet weak var adjLabel: UILabel!
    
     
@@ -18,6 +19,8 @@ class TaskCell: UITableViewCell {
     
     
     @IBOutlet weak var verLabel: UILabel!
+    
+   
    
     
    

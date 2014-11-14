@@ -23,11 +23,19 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var verbLabel: UILabel!
     
+    
+   
+    
+    
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+   // Hier wird der Speichern-Butten ausgegraut
+    self.navigationItem.rightBarButtonItem?.enabled = false
         
     }
     
@@ -42,7 +50,8 @@ class FirstViewController: UIViewController {
     
     @IBAction func BrainFXButtonTapped(sender: AnyObject) {
    
-   
+   // Hier wird der Speichern-Button aktiviert
+   self.navigationItem.rightBarButtonItem?.enabled = true
     
         
         let zufallszahlAdjektiv = Int(arc4random_uniform(UInt32(countAdjektiv)))
