@@ -31,32 +31,29 @@ class TableViewController: UIViewController, UITableViewDataSource {
     
     
     
-    @IBAction func addSpruch(sender: UIBarButtonItem) {
-    
-        // Hier wird der Speichern-Button deaktiviert
-        self.navigationItem.rightBarButtonItem?.enabled = false
+//    @IBAction func addSpruch(sender: UIBarButtonItem) {
+//    
+//        // Hier wird der Speichern-Button deaktiviert
+//        self.navigationItem.rightBarButtonItem?.enabled = false
     
    
-    
-
-    
-    
         
-        self.saveName(adj)
-     
-        self.tableView.reloadData()
-        //println("---->\(adj)\( nom)\( ver)")
-        
-}
+//}
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //title = "\"Meine Brainers\""
-        tableView.registerClass(UITableViewCell.self,
-            forCellReuseIdentifier: "Cell")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
+    // Funktion saveName wird aufgerufen
+        
+        self.saveName(adj)
+        self.tableView.reloadData()
+    
+    
+    
     }
     
     // Do any additional setup after loading the view, typically from a nib.
@@ -163,10 +160,11 @@ class TableViewController: UIViewController, UITableViewDataSource {
 
 
     
-    
+
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
             return true
        }
+    
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -190,7 +188,14 @@ class TableViewController: UIViewController, UITableViewDataSource {
                 people.removeAtIndex(indexPath.row)
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
-   }
+   
+    
+        
+    
+    
+    
+    
+    }
 
     
     

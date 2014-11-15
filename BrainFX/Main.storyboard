@@ -201,12 +201,6 @@
                                 <segue destination="bZA-GT-WUH" kind="presentation" id="mCI-UT-TvW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Speichern" id="TAs-Qj-QVO">
-                            <color key="tintColor" red="0.31372549020000001" green="0.69411764710000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="addSpruch:" destination="vXZ-lx-hvc" id="rK7-td-2ZY"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -259,9 +253,10 @@
                                         <exclude reference="nIz-Wx-rFe"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="20" y="96" width="361" height="30"/>
                                 </variation>
+                                <variation key="heightClass=compact-widthClass=compact"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="nIz-Wx-rFe"/>
@@ -283,7 +278,7 @@
                                         <exclude reference="jcG-Jf-8pP"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="20" y="134" width="361" height="28"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -305,7 +300,7 @@
                                         <exclude reference="QIo-yF-heF"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="20" y="170" width="361" height="30"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -326,7 +321,7 @@
                                         <exclude reference="ndc-Wg-Ris"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="40" y="218" width="244" height="231"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -354,7 +349,7 @@
                                         <exclude reference="zJz-lW-fmU"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="161" y="525" width="78" height="38"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -442,7 +437,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="uTd-Zg-0he">
-                        <barButtonItem key="rightBarButtonItem" title="Speichern" id="Tgq-xz-XId">
+                        <barButtonItem key="rightBarButtonItem" title="Brainer speichern" id="Tgq-xz-XId">
                             <color key="tintColor" red="0.26274509800000001" green="0.63921568630000003" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="oLl-kO-vYD" kind="presentation" id="Hm8-33-J5c"/>
