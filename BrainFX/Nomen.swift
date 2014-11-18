@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let nomen = ["Häuser", "Autos", "Schweine", "Rasenmäher"]
+let nomen = ["Häuser", "Autos", "Schweine", "Rasenmäher", "Bäume", "Gläser", "Töpfe", "Scheiben", "Teller", "Rohre", "Fahrräder", "Muster", "Tische", "Stühle", "Beine", "Mäuse", "Kabel", "Monitore", "Fernseher", "Steckdosen", "Schubladen"]
 
 
 

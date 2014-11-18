@@ -11,6 +11,8 @@ import CoreData
 
 class TableViewController: UIViewController, UITableViewDataSource {
     
+    
+    
     var people = [NSManagedObject]()
    
    
@@ -18,45 +20,49 @@ class TableViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
   
     
-    
-//    var adj: String!
-//    var nom: String!
-//    var ver: String!
+    // Diese Variablen werden erstellt, damit prepareForSegue von der vorrausgehenden Seite funzt!
+    var adj: String!
+    var nom: String!
+    var ver: String!
 
-    var adj = zufallsadj[0]
-    var nom = zufallsnom[0]
-    var ver = zufallsver[0]
+    var test = "irgendwas"
+    
     
    
-    
-    
-    
-//    @IBAction func addSpruch(sender: UIBarButtonItem) {
-//    
-//        // Hier wird der Speichern-Button deaktiviert
-//        self.navigationItem.rightBarButtonItem?.enabled = false
-    
-   
-        
-//}
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //title = "\"Meine Brainers\""
+        
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-    // Funktion saveName wird aufgerufen
         
+        if test == "brainer" {
+        
+            println("nix passiert")}
+            
+        else {
+        
+        // Funktion saveName wird aufgerufen
         self.saveName(adj)
         self.tableView.reloadData()
-    
+            
+            
+        }
+            
+            
+        
     
     
     }
     
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+
+ 
+    
+    
     
     
     
@@ -81,6 +87,9 @@ class TableViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell
         
         let person = people[indexPath.row]
+        
+//        cell.layoutMargins = UIEdgeInsetsZero;
+//        cell.preservesSuperviewLayoutMargins = false;
         
         cell.adjLabel.text = person.valueForKey("adjektiv") as String!
         cell.nomLabel.text = person.valueForKey("nomen") as String!

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let verben = ["kastrieren!", "beleuchten!", "erzeugen!", "verkleben!"]
+let verben = ["kastrieren!", "beleuchten!", "erzeugen!", "verkleben!", "verbiegen!", "ablösen!", "absägen!", "drucken!", "erlösen!", "bauen!", "zersägen!"]
 
 
 

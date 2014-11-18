@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let adjektiv = ["Rote", "Grüne", "Blaue", "Gelbe"]
+let adjektiv = ["Rote", "Grüne", "Blaue", "Gelbe", "Tote", "Eiserne", "Verbrauchte", "Verbogene", "Krumme", "Lange", "Kurze", "Gerade", "Dumme", "Graue", "Spitze", "Stumpfe", "Rohe", "Kleine", "Warme", "Kalte", "Gefrorene", "Aufgetaute", "Heisse", "Schöne", "Brutale", "Goldene", "Silberne", "Metallische", "Nasse", "Trockene"]
 
 //let adj = adjektiv[0]
 
